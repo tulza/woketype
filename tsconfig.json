@@ -13,7 +13,9 @@
       "@hooks/*": ["./src/hooks/*"],
       "@entities/*": ["./src/entities/*"],
       "@api/*": ["./src/api/*"],
-      "@pages/*": ["./src/components/pages/*"]
+      "@pages/*": ["src/pages/*"],
+      "@svgs/*": ["src/images/svg/*"],
+      "@images/*": ["src/images/*"]
       // "@template/*": ["src/*"],
     },
 
