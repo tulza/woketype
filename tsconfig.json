@@ -14,7 +14,7 @@
       "@entities/*": ["./src/entities/*"],
       "@api/*": ["./src/api/*"],
       "@pages/*": ["src/pages/*"],
-      "@svgs/*": ["src/images/svg/*"],
+      "@svgs/*": ["src/images/svgs/*"],
       "@images/*": ["src/images/*"]
       // "@template/*": ["src/*"],
     },
