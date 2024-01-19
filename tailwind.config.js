@@ -13,13 +13,11 @@ export default {
     },
     extend: {
       colors: {
-        element: "var(--element)",
         background: "var(--background)",
+        element: "var(--element)",
+        primary: "var(--primary)",
+        accent: "var(--accent)",
         text: "var(--text)",
-
-        black: "var(--black)",
-        gray: "var(--gray)",
-        white: "var(--white)",
       },
       screens: {},
       transitionProperty: {},

@@ -1,14 +1,21 @@
+import clsx from "clsx";
+import { motion } from "framer-motion";
+
 type ElementProps = {
+  className?: string;
   image?: string;
   text: string;
 };
 
-const ImageTextElem = ({ image, text }: ElementProps) => {
+const ImageTextElem = ({ image, text, className }: ElementProps) => {
   return (
-    <div className="flex gap-2">
+    <motion.div
+      className={clsx("flex gap-2", `${className}`)}
+      variants={{ hover: { color: "var(--text)" } }}
+    >
       {!!image && <img src={image} alt={text} />}
       <p>{text}</p>
-    </div>
+    </motion.div>
   );
 };
 

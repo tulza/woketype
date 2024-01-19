@@ -5,25 +5,25 @@ import ImageTextElem from "./ImageTextElem";
 const TypeSettingsBar = () => {
   return (
     <>
-      <div className="flex flex-col gap-4">
-        <div className="flex h-10 w-max items-center rounded-lg bg-element p-2 text-sm">
+      <div className="text-primary flex flex-col gap-4 text-sm">
+        <div className=" flex h-10 w-max items-center rounded-lg bg-element p-2 ">
           <div className="mx-6 select-none">
-            <ImageTextElem text="Gamemode" />
+            <ImageTextElem text="Gamemode" className="text-text" />
           </div>
           <Spacer />
           <Button>
-            <ImageTextElem text="TypeSettingsBar" />
+            <ImageTextElem text="Normal" />
           </Button>
           <Button>
-            <ImageTextElem text="TypeSettingsBar" />
+            <ImageTextElem text="Chase" />
           </Button>
           <Button>
-            <ImageTextElem text="TypeSettingsBar" />
+            <ImageTextElem text="Can you remember?" />
           </Button>
         </div>
-        <div className="flex h-10 w-max items-center rounded-lg bg-element p-2 text-sm">
+        <div className="flex h-10 w-max items-center rounded-lg bg-element p-2">
           <div className="mx-6 select-none">
-            <ImageTextElem text="Mods" />
+            <ImageTextElem text="Mods" className="text-text" />
           </div>
           <Spacer />
           <Button>
