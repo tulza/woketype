@@ -1,0 +1,53 @@
+() = mods parameter
+m: = mod
+g: = gamemode
+ex. = except
+
+[gamemode]
+{
+###normal(any) 
+-->classic type test
+goal: type
+end result output: normal
+}
+{
+###chase(any){word/m or letter/m }
+--> User will set speed typespeed either word/m or letter/m
+when the user start typing the chase will happen after a second.
+#goal:
+for the user their goal is to survive for as long as possible or when they loses all their lives the test will end
+#end result output: [typespeed, chase speed, survival length(s)]
+}
+{
+###can you remember?(sudden death, flashlight){length}
+---> this test has a fixed length, which the typer can adjust 
+--> upon typing the first character, the whole area becomes blurred and invisible 
+#goal:
+user will have to remember the entire dialogue and type it out.
+#end result output: [typespeed, time taken, accuracy]
+}
+
+[mods]
+#fun:
+
+sudden death(any) - player dies upon typing the wrong character
+full flip(ex.m:flip) - the entire type area is flipped 180degs
+
+#difficulty increasing:
+
+hidden - hide current letter and approaching letters base on current type speed
+flip(m:fullflip) - letter flips upside down
+flashlight - put a dark overlay  
+shake(any) - shake the letters 
+randomise(ex.g:cyr m:hidden) - the words are randomised until close
+blurry(ex.m:hidden) - upcoming words are all blurry
+rotate(any) - while typing the website snap rotates a little every letter
+scatter(any) - the letters are scattered a little from the position and rotated as well
+mouse type(any) - disable keyboard and type with mouse via keyboard overlay on normal test type
+
+
+[other game idea gimmicks]
+
+reaction type test:
+normal reaction test but you type out the word,
+words are given to you at the beginning so the player always know what is coming up.

@@ -20,7 +20,9 @@ export default {
         text: "var(--text)",
       },
       screens: {},
-      transitionProperty: {},
+      transitionProperty: {
+        width: "width",
+      },
     },
   },
   plugins: [],

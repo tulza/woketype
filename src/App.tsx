@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename="/vite-react-ts-template">
+    <Router basename="/woketype">
       <div className="h-full p-8">
         <Routes>
           <Route path="/" element={<HomePage />} />
