@@ -3,12 +3,12 @@ import GamemodeButton from "@/components/GamemodeButton";
 import Spacer from "@components/Spacer";
 import ImageTextElem from "./ImageTextElem";
 import { useContext, useEffect, useState } from "react";
-import { GameSettingsContext } from "@/pages/HomePage";
+import { GameSettingsContext } from "@/components/pages/HomePage";
 import modsData from "@/data/modsData";
 import { motion } from "framer-motion";
 
 const TypeSettingsBar = () => {
-  const { gamemode, mods, setMods } = useContext(GameSettingsContext);
+  const { gamemode } = useContext(GameSettingsContext);
   const [allowedMods, setAllowedMods] = useState<[] | string[]>([]);
   useEffect(() => {
     const allowed = modsData(gamemode);

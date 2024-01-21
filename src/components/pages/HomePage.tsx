@@ -11,9 +11,12 @@ const HomePage = () => {
     <GameSettingsContext.Provider
       value={{ gamemode, setGamemode, mods, setMods }}
     >
-      <div className="flex flex-col gap-4">
-        <div id="ContentWrapper" className="mx-80">
-          <div className="mb-10 text-2xl font-bold">
+      <div className="flex h-full flex-col gap-4">
+        <div
+          id="ContentWrapper"
+          className="mx-80 h-full pt-10 outline outline-1 outline-element"
+        >
+          <div className="mb-10 text-3xl font-bold">
             <span>woketype</span>
           </div>
           <TypeSettingsBar />

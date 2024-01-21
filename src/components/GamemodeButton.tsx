@@ -1,4 +1,4 @@
-import { GameSettingsContext } from "@/pages/HomePage";
+import { GameSettingsContext } from "@/components/pages/HomePage";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 

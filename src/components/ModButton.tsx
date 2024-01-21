@@ -1,7 +1,4 @@
-import { GameSettingsContext } from "@/pages/HomePage";
 import { motion } from "framer-motion";
-import { useContext } from "react";
-import { ModsType } from "@/types/ModTypes";
 
 type ButtonTypes = {
   mod: string;
