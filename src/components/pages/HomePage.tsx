@@ -1,4 +1,4 @@
-import TypeSettingsBar from "@components/TypeSettingsBar";
+import TypeSettingsBar from "@/components/modeSelection/TypeSettingsBar";
 import { createContext, useState } from "react";
 import { GamemodeTypes } from "@/types/GamemodeTypes";
 

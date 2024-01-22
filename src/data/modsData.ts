@@ -1,5 +1,5 @@
 import { GamemodeTypes } from "@/types/GamemodeTypes";
-
+import GamemodeExcludeMod from "@/data/GamemodeExcludeMod.json";
 export const modsData = (gamemode: GamemodeTypes) => {
   const modList: string[] | [] = [
     "hidden",
@@ -14,7 +14,10 @@ export const modsData = (gamemode: GamemodeTypes) => {
   ];
   switch (gamemode) {
     case "normal": {
-      const allowed = modList;
+      const allowed = modList.filter(
+        (mod) => !GamemodeExcludeMod[.includes(mod),
+      );
+
       return allowed;
     }
     case "chase": {

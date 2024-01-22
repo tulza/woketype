@@ -1,0 +1,11 @@
+{
+  "normal": {
+    "exclude": []
+  },
+  "chase": {
+    "exclude": ["flip"]
+  },
+  "can you remember?": {
+    "exclude": ["hidden", "blurry", "randomise"]
+  }
+}
